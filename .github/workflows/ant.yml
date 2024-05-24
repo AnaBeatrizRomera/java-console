@@ -25,4 +25,4 @@ jobs:
       run: javac src/Main.java
     - name: Run Java program
       run: |
-        java -cp bin src/Main.java 
+        java src/Main.java 
