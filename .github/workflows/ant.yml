@@ -22,9 +22,7 @@ jobs:
         java-version: '19'
         distribution: 'temurin'
     - name: Compile Java code
-      run: |
-        mkdir -p bin
-        javac -d bin $(find src -name "*.java")
+      run: javac src/Main.java
     - name: Run Java program
       run: |
-        java -cp bin src/Main    
+        java -cp bin src/Main.java 
